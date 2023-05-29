@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PR_ERP_WebAPI.Domain\PR_ERP_WebAPI.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

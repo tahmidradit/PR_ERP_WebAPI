@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PR_ERP_WebAPI.Domain.Data;
 
@@ -11,9 +12,11 @@ using PR_ERP_WebAPI.Domain.Data;
 namespace PR_ERP_WebAPI.Domain.Migrations
 {
     [DbContext(typeof(PRERP_APIDbContext))]
-    partial class PRERP_APIDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230529171320_ModifiedOrderPropertiesDataType")]
+    partial class ModifiedOrderPropertiesDataType
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

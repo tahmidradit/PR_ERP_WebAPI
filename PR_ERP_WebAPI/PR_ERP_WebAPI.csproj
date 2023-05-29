@@ -19,11 +19,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\PR_ERP_WebAPI.Domain\PR_ERP_WebAPI.Domain.csproj" />
+    <ProjectReference Include="..\PR_ERP_WebAPI.Repository\PR_ERP_WebAPI.Repository.csproj" />
+    <ProjectReference Include="..\PR_ERP_WebAPI.Service\PR_ERP_WebAPI.Service.csproj" />
   </ItemGroup>
 
 </Project>

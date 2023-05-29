@@ -23,15 +23,16 @@ namespace PR_ERP_WebAPI.Domain.DTO.Order
         [Required, StringLength(100)]
         public string ItemName { get; set; }
 
-        [Required, Range(1, int.MinValue, ErrorMessage = "Minimum Unit Price is 1")]
-        public double UnitPrice { get; set; }
+        [Required, Range(1, int.MaxValue, ErrorMessage = "Minimum Unit Price is 1")]
+        public decimal UnitPrice { get; set; }
 
-        [Range(1, int.MinValue, ErrorMessage = "Minimum Quantity is 1")]
+        [Range(1, int.MaxValue, ErrorMessage = "Minimum Quantity is 1")]
         public int Quantity { get; set; }
         public int? Discount { get; set; }
-        public double TotalPrice { get; set; }
+        public decimal TotalPrice { get; set; }
         public int OrderInvoiceNo { get; set; }
         public DateTime OrderDateTime { get; set; }
         public DateTime ShippingDate { get; set; }
+        public bool? IsActive { get; set; }
     }
 }
